@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analyzer</title>
+</head>
+<body>
+    <h2>Resume Ranking AI</h2>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <label>Paste Resume Text</label><br>
+        <textarea name="resume_text" rows="6" cols="60"></textarea><br><br>
+
+        <label>Paste Job Description</label><br>
+        <textarea name="job_desc" rows="6" cols="60"></textarea><br><br>
+
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>
